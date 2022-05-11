@@ -1,0 +1,56 @@
+.gym {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .container {
+    display: grid;
+    grid-template-columns: 2.9fr 5.1fr;
+    column-gap: 22px;
+  }
+}
+
+.gym__text {
+  margin-top: 45px;
+  margin-left: 60px;
+
+  p:first-of-type {
+    margin: -1px 0 40px;
+    padding: 0;
+    font: 400 18px/150% $ff-roboto-condensed;
+  }
+
+  p:not(:first-of-type) {
+    margin: 0 0 8px;
+    padding: 0;
+    font: 100 16px/150% $ff-roboto-condensed;
+  }
+}
+
+.gym__title {
+  margin: 0;
+  padding: 0;
+  font: 700 49px/120% $ff-bebas-neue;
+  letter-spacing: 0.03em;
+}
+
+.gym__views {
+  position: relative;
+  min-height: 516px;
+
+  & > img {
+    $margin-left: 63px;
+    margin-left: $margin-left;
+    width: calc(100% - $margin-left);
+    height: 401px;
+    object-fit: cover;
+  }
+
+  .video {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+
+    width: 364px;
+    height: 228px;
+  }
+}

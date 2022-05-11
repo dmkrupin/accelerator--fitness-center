@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+.intro {
+  min-height: 658px;
+  padding-top: 30px;
+  background:
+    conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+
+}
+
+.intro__header {
+  margin-top: -2px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__logo {
+  text-transform: uppercase;
+  font: 700 26px/120% $ff-bebas-neue;
+  color: $color-default-white;
+  letter-spacing: 0.02em;
+}
+
+.intro__tel {
+  text-transform: uppercase;
+  font: 700 26px/120% $ff-bebas-neue;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+}
+
+.intro__content {
+  display: flex;
+}
+
+.intro__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 377px;
+  margin-left: 20px;
+  margin-right: 62px;
+
+  & > p:first-child {
+    margin: 0 0 2px 0;
+    padding: 0;
+
+    font: 400 49px/120% $ff-bebas-neue;
+    letter-spacing: 0.03em;
+    color: $color-default-white;
+  }
+}
+
+.intro__title {
+  margin: 0 0 41px 0;
+  padding: 0;
+  position: relative;
+
+  font: 700 110px/106% $ff-bebas-neue;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  text-shadow: 2px 0 2px $color-default-white;
+  text-align: right;
+
+  &::before {
+    content:
+    "Тренажёрный зал\000A
+    Групповые занятия\000A
+    Кардио-зона";
+    position: absolute;
+    bottom: 44px;
+    left: -78px;
+
+    white-space: pre;
+    font: 400 14px/150% $ff-roboto-condensed;
+    letter-spacing: 0;
+    color: $color-default-white;
+    text-align: right;
+  }
+}
+
+.intro__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display:none;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font: 400 14px/150% $ff-roboto-condensed;
+    color: $color-default-white;
+    text-transform: capitalize;
+    text-align: right;
+  }
+}
+
+.intro__btn {
+  margin-bottom: 50px;
+  // margin-right: -20px;
+  width: 234px;
+}
+
+.intro__image {
+  margin-top: -10px;
+  vertical-align: middle;
+
+  img {
+    display: inline-block;
+    width: 500px;
+    height: 556px;
+  }
+}
+
+.intro__socials {
+  align-self: flex-end;
+  margin: 0 0 45px auto;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.intro__link {
+  font: 400 12px/120% $ff-roboto-condensed;
+  color: $color-default-white;
+  text-transform: uppercase;
+}
