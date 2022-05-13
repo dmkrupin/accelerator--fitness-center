@@ -3,10 +3,10 @@
   justify-content: center;
   padding: 19px 24px;
 
+  border: 4px solid $color-default-white;
   color: $color-default-white;
   background-color: $color-transparent;
 
-  border: 4px solid $color-default-white;
   cursor: pointer;
 
   font: 700 12px/120% $ff-roboto-condensed;
@@ -26,5 +26,11 @@
     &:focus {
       opacity: 0.8;
     }
+  }
+
+  &--transparent {
+    border: 2px solid $color-sapphire;
+    color: $color-sapphire;
+    background-color: $color-transparent;
   }
 }

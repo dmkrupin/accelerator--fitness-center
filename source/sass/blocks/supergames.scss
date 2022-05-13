@@ -1,0 +1,21 @@
+.supergames {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.supergames__info {
+  background-color: $color-torch-red;
+}
+
+.supergames__image {
+  img {
+    width: 660px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
