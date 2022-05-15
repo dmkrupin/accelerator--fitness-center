@@ -73,8 +73,13 @@ p {
     &:hover,
     &:focus {
       color: $color-venetian-red;
-      outline-offset: 7px;
     }
+
+    &:focus {
+      outline: 3px solid $color-resolution-blue;
+      outline-offset: 10px;
+    }
+
     &:hover::after,
     &:focus::after {
       background-color: $color-venetian-red;
@@ -137,8 +142,8 @@ p {
       &:hover,
       &:focus {
         color: $color-resolution-blue;
-        outline-offset: 7px;
       }
+
       &:hover::after,
       &:focus::after {
         background-color: $color-resolution-blue;

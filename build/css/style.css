@@ -680,12 +680,24 @@ button,
   font: 700 26px/120% "Bebas Neue", "Arial", sans-serif;
   color: #ffffff;
   letter-spacing: 0.02em; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .intro__logo:hover, .intro__logo:focus {
+      opacity: 0.7; }
+    .intro__logo:focus {
+      outline: 3px solid #1C3374;
+      outline-offset: 7px; } }
 
 .intro__tel {
   text-transform: uppercase;
   font: 700 26px/120% "Bebas Neue", "Arial", sans-serif;
   color: #ffffff;
   letter-spacing: 0.03em; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .intro__tel:hover, .intro__tel:focus {
+      opacity: 0.7; }
+    .intro__tel:focus {
+      outline: 3px solid #1C3374;
+      outline-offset: 7px; } }
 
 .intro__content {
   display: -webkit-box;
@@ -734,7 +746,8 @@ button,
     font: 400 14px/150% "Roboto Condensed", "Arial", sans-serif;
     letter-spacing: 0;
     color: #ffffff;
-    text-align: right; }
+    text-align: right;
+    text-shadow: none; }
 
 .intro__features {
   margin: 0;
@@ -781,6 +794,12 @@ button,
   font: 400 12px/120% "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .intro__link:hover, .intro__link:focus {
+      text-decoration: underline; }
+    .intro__link:focus {
+      outline: 3px solid #1C3374;
+      outline-offset: 7px; } }
 
 .gym {
   padding-top: 120px;
@@ -991,7 +1010,9 @@ button,
   @media (hover: hover), screen and (min-width: 0\0) {
     .membership__option:hover a,
     .membership__option a:focus {
-      color: rgba(16, 38, 84, 0.8); }
+      color: rgba(16, 38, 84, 0.8);
+      outline: 3px solid #1C3374;
+      outline-offset: 12px; }
     .membership__option:hover::after {
       background-color: rgba(120, 120, 120, 0.6); } }
   .membership__option.is-active a {
@@ -1260,7 +1281,8 @@ button,
     margin: 51px 0 -3px;
     padding: 0;
     font: 700 18px/150% "Roboto Condensed", "Arial", sans-serif;
-    text-align: center; }
+    text-align: center;
+    color: #ffffff; }
   .trainers__info p + p {
     margin: 0 0 34px;
     padding: 0;
@@ -1501,8 +1523,10 @@ p {
     transition: background 0.3s ease; }
   @media (hover: hover), screen and (min-width: 0\0) {
     .deals__link:hover, .deals__link:focus {
-      color: #B80027;
-      outline-offset: 7px; }
+      color: #B80027; }
+    .deals__link:focus {
+      outline: 3px solid #1C3374;
+      outline-offset: 10px; }
     .deals__link:hover::after, .deals__link:focus::after {
       background-color: #B80027; } }
 
@@ -1546,8 +1570,7 @@ p {
       background-color: #ffffff; }
     @media (hover: hover), screen and (min-width: 0\0) {
       .deals__item--special .deals__link:hover, .deals__item--special .deals__link:focus {
-        color: #1C3374;
-        outline-offset: 7px; }
+        color: #1C3374; }
       .deals__item--special .deals__link:hover::after, .deals__item--special .deals__link:focus::after {
         background-color: #1C3374; } }
 
@@ -1585,7 +1608,7 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #102654; }
+  background-color: #1C3374; }
   .reviews__item figure {
     margin: 0;
     padding: 0;
@@ -1607,6 +1630,108 @@ p {
     padding: 0;
     font: 400 16px/140% "Roboto Condensed", "Arial", sans-serif;
     color: #ffffff; }
+
+.contacts {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  min-height: 337px;
+  background: -webkit-gradient(linear, left top, right top, from(#102654), color-stop(50%, #102654), color-stop(50%, #ffffff), to(#ffffff));
+  background: -o-linear-gradient(left, #102654 0%, #102654 50%, #ffffff 50%, #ffffff 100%);
+  background: linear-gradient(to right, #102654 0%, #102654 50%, #ffffff 50%, #ffffff 100%); }
+  .contacts .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+  font: 700 49px/120% "Bebas Neue", "Arial", sans-serif;
+  color: #102654;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left; }
+  .contacts__title--free-session {
+    margin-top: -5px;
+    margin-bottom: 33px;
+    color: #ffffff; }
+  .contacts__title--info {
+    margin-top: -5px;
+    margin-bottom: 33px; }
+
+.contacts__free-session {
+  margin-right: 170px; }
+
+.contacts__info {
+  padding-left: 120px; }
+
+.contacts__list {
+  margin: 0 0 0 4px;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 18px; }
+
+.contacts__heading {
+  margin: 0 0 2px;
+  padding: 0;
+  font: 700 16px/150% "Roboto Condensed", "Arial", sans-serif;
+  color: #102654; }
+  .contacts__heading + p,
+  .contacts__heading + a,
+  .contacts__heading + address {
+    margin: 0;
+    padding: 0;
+    font: 400 14px/152.3% "Roboto Condensed", "Arial", sans-serif;
+    color: #102654; }
+
+.contacts__item:nth-child(2n) {
+  margin-left: 62px; }
+
+@media (hover: hover), screen and (min-width: 0\0) {
+  .contacts__item a:hover, .contacts__item a:focus {
+    text-decoration: underline; }
+  .contacts__item a:focus {
+    outline: 3px solid #ED0233;
+    outline-offset: 5px; } }
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; }
+  form input {
+    width: 100%;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1px solid #74819C;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    font: 400 14px/120% "Roboto Condensed", "Arial", sans-serif; }
+    form input::-webkit-input-placeholder {
+      color: #ffffff; }
+    form input::-moz-placeholder {
+      color: #ffffff; }
+    form input:-ms-input-placeholder {
+      color: #ffffff; }
+    form input::-ms-input-placeholder {
+      color: #ffffff; }
+    form input::placeholder {
+      color: #ffffff; }
+    @media (hover: hover), screen and (min-width: 0\0) {
+      form input:hover, form input:focus {
+        outline: 3px solid #ED0233;
+        outline-offset: 5px; } }
+  form .btn {
+    padding: 17px 24px;
+    grid-column: 1 / -1;
+    border-width: 2px;
+    font-size: 14px; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,

@@ -77,6 +77,8 @@
     &:hover a,
     & a:focus {
       color: transparentize($color: $color-sapphire, $amount: 0.2);
+      outline: 3px solid $color-resolution-blue;
+      outline-offset: 12px;
     }
 
     &:hover::after {

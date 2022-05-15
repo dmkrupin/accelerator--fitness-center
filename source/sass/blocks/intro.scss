@@ -20,6 +20,18 @@
   font: 700 26px/120% $ff-bebas-neue;
   color: $color-default-white;
   letter-spacing: 0.02em;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: 3px solid $color-resolution-blue;
+      outline-offset: 7px;
+    }
+  }
 }
 
 .intro__tel {
@@ -27,6 +39,18 @@
   font: 700 26px/120% $ff-bebas-neue;
   color: $color-default-white;
   letter-spacing: 0.03em;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: 3px solid $color-resolution-blue;
+      outline-offset: 7px;
+    }
+  }
 }
 
 .intro__content {
@@ -77,6 +101,7 @@
     letter-spacing: 0;
     color: $color-default-white;
     text-align: right;
+    text-shadow: none;
   }
 }
 
@@ -132,4 +157,16 @@
   font: 400 12px/120% $ff-roboto-condensed;
   color: $color-default-white;
   text-transform: uppercase;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 3px solid $color-resolution-blue;
+      outline-offset: 7px;
+    }
+  }
 }
