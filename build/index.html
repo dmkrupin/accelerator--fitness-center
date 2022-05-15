@@ -349,8 +349,8 @@
             <section class="contacts__free-session">
               <h2 class="contacts__title contacts__title--free-session">БЕСПЛАТНОЕ занятие</h2>
               <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-                <label><input type="text" placeholder="Имя"></label>
-                <label><input type="tel" placeholder="Телефон"></label>
+                <label><input type="text" placeholder="Имя" required></label>
+                <label><input type="tel" placeholder="Телефон" required></label>
                 <button class="btn" type="submit">отправить</button>
               </form>
             </section>
@@ -378,8 +378,40 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="page-footer">
+        <div class="container">
+          <a class="page-footer__logo" href="#">supergym</a>
+          <nav class="page-footer__nav">
+            <a class="page-footer__link" href="">Услуги</a>
+            <a class="page-footer__link" href="">Абонементы</a>
+            <a class="page-footer__link" href="">Акции</a>
+            <a class="page-footer__link" href="">Тренеры</a>
+            <a class="page-footer__link" href="">Расписание</a>
+          </nav>
+          <ul class="page-footer__socials">
+            <li class="page-footer__socials-item page-footer__socials-item--vk">
+              <a href="sitemap.html">
+                <svg width="24" height="13" aria-label="Мы в ВК">
+                  <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__socials-item page-footer__socials-item--ig">
+              <a href="sitemap.html">
+                <svg width="24" height="24" aria-label="Мы в Инстаграмы">
+                  <use xlink:href="img/sprite_auto.svg#icon-ig"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__socials-item page-footer__socials-item--fb">
+              <a href="sitemap.html">
+                <svg width="12" height="24" aria-label="Мы на Фейсбуке">
+                  <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
 

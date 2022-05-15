@@ -1633,7 +1633,7 @@ p {
 
 .contacts {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   min-height: 337px;
   background: -webkit-gradient(linear, left top, right top, from(#102654), color-stop(50%, #102654), color-stop(50%, #ffffff), to(#ffffff));
   background: -o-linear-gradient(left, #102654 0%, #102654 50%, #ffffff 50%, #ffffff 100%);
@@ -1724,7 +1724,7 @@ form {
     form input::placeholder {
       color: #ffffff; }
     @media (hover: hover), screen and (min-width: 0\0) {
-      form input:hover, form input:focus {
+      form input:focus {
         outline: 3px solid #ED0233;
         outline-offset: 5px; } }
   form .btn {
@@ -1732,6 +1732,97 @@ form {
     grid-column: 1 / -1;
     border-width: 2px;
     font-size: 14px; }
+
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 37px;
+  min-height: 108px;
+  background-color: #030A1A; }
+  .page-footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.page-footer__logo {
+  margin-right: 30px;
+  text-transform: uppercase;
+  font: 700 26px/120% "Bebas Neue", "Arial", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.02em; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .page-footer__logo:hover, .page-footer__logo:focus {
+      opacity: 0.7; }
+    .page-footer__logo:focus {
+      outline: 3px solid #ED0233;
+      outline-offset: 7px; } }
+
+.page-footer__nav {
+  margin-top: -4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.page-footer__link {
+  font: 400 14px/120% "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff; }
+  .page-footer__link:not(:last-child) {
+    margin-right: 40px; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .page-footer__link:hover, .page-footer__link:focus {
+      text-decoration: underline; }
+    .page-footer__link:focus {
+      outline: 3px solid #ED0233;
+      outline-offset: 5px; } }
+
+.page-footer__socials {
+  margin: -5px -12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px; }
+
+.page-footer__socials-item a {
+  vertical-align: middle; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .page-footer__socials-item a:hover, .page-footer__socials-item a:focus {
+      opacity: 0.7; }
+    .page-footer__socials-item a:focus {
+      outline: 3px solid #ED0233;
+      outline-offset: 5px; } }
+
+.page-footer__socials-item--vk,
+.page-footer__socials-item--vk a,
+.page-footer__socials-item--vk svg {
+  width: 24px;
+  height: 13px; }
+
+.page-footer__socials-item--ig,
+.page-footer__socials-item--ig a,
+.page-footer__socials-item--ig svg {
+  width: 24px;
+  height: 24px; }
+
+.page-footer__socials-item--fb,
+.page-footer__socials-item--fb a,
+.page-footer__socials-item--fb svg {
+  width: 12px;
+  height: 24px; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,

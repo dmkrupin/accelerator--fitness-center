@@ -1,0 +1,109 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 37px;
+  min-height: 108px;
+  background-color: $color-black-russian;
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  margin-right: 30px;
+  text-transform: uppercase;
+  font: 700 26px/120% $ff-bebas-neue;
+  color: $color-default-white;
+  letter-spacing: 0.02em;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: 3px solid $color-torch-red;
+      outline-offset: 7px;
+    }
+  }
+}
+
+.page-footer__nav {
+  margin-top: -4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.page-footer__link {
+  font: 400 14px/120% $ff-roboto-condensed;
+  color: $color-default-white;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 3px solid $color-torch-red;
+      outline-offset: 5px;
+    }
+  }
+}
+
+.page-footer__socials {
+  margin: -5px -12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.page-footer__socials-item {
+  a {
+    vertical-align: middle;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+
+      &:focus {
+        outline: 3px solid $color-torch-red;
+        outline-offset: 5px;
+      }
+    }
+  }
+
+  &--vk,
+  &--vk a,
+  &--vk svg {
+    width: 24px;
+    height: 13px;
+  }
+
+  &--ig,
+  &--ig a,
+  &--ig svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--fb,
+  &--fb a,
+  &--fb svg {
+    width: 12px;
+    height: 24px;
+  }
+}
