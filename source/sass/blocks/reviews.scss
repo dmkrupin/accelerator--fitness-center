@@ -1,0 +1,38 @@
+.reviews {
+  padding-bottom: 120px;
+  background-color: $color-default-white;
+}
+
+.reviews__title {
+  margin: -5px 0 44px;
+  padding: 0;
+  font: 700 49px/120% $ff-bebas-neue;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  text-align: center;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.reviews__item {
+  width: 560px;
+  min-height: 242px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 62px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  background-color: $color-sapphire;
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+}

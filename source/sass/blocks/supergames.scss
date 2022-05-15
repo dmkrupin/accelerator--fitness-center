@@ -4,18 +4,102 @@
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 500px 1fr;
+    min-height: 500px;
   }
 }
 
 .supergames__info {
+  position: relative;
+  padding: 87px 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: $color-torch-red;
+  color: $color-default-white;
+
+  dl, dd, dt {
+    margin: 0;
+    padding: 0;
+  }
+
+  dt {
+    position: relative;
+    font: 400 18px/150% $ff-roboto-condensed;
+  }
+
+  dt::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 64px;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+
+  dd {
+    font: 400 14px/150% $ff-roboto-condensed;
+
+    span {
+      font: 700 40px/150% $ff-roboto-condensed;
+    }
+  }
+}
+
+.supergames__title {
+  margin: 1px 0 3px;
+  padding: 0;
+  font: 700 90px/100% $ff-bebas-neue;
+  letter-spacing: 0.03em;
+
+  & + p {
+    margin: 0 0 47px;
+    padding: 0;
+    font: 400 18px/150% $ff-roboto-condensed;
+  }
+}
+
+.supergames__date {
+  position: absolute;
+  top: 80px;
+  right: 108px;
+
+  dd {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+      margin-right: 7px;
+    }
+  }
+}
+
+.supergames__time {
+  position: absolute;
+  top: 175px;
+  right: 80px;
+
+  dt::after {
+    width: 88px;
+  }
+}
+
+.supergames__btn {
+  padding: 24px 24px;
 }
 
 .supergames__image {
-  img {
-    width: 660px;
-    height: 500px;
-    object-fit: cover;
+  background-color: $color-sapphire;
+  background-image: url("../img/content/supergames-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/content/supergames-desktop@2x.jpg");
   }
 }
