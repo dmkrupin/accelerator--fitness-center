@@ -24,7 +24,7 @@
   min-height: 242px;
   margin-left: auto;
   margin-right: auto;
-  padding: 62px;
+  padding: 62px 62px 58px;
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -34,5 +34,25 @@
   figure {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    column-gap: 28px;
+  }
+
+  img {
+    grid-row: auto / span 2;
+  }
+
+  figcaption {
+    margin: -7px 0 12px;
+    font: 700 20px/150% $ff-roboto-condensed;
+    color: $color-default-white;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    font: 400 16px/140% $ff-roboto-condensed;
+    color: $color-default-white;
   }
 }

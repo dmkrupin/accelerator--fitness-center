@@ -1576,7 +1576,7 @@ p {
   min-height: 242px;
   margin-left: auto;
   margin-right: auto;
-  padding: 62px;
+  padding: 62px 62px 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1588,7 +1588,25 @@ p {
   background-color: #102654; }
   .reviews__item figure {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80px 1fr;
+    grid-template-columns: 80px 1fr;
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px; }
+  .reviews__item img {
+    grid-row: auto / span 2; }
+  .reviews__item figcaption {
+    margin: -7px 0 12px;
+    font: 700 20px/150% "Roboto Condensed", "Arial", sans-serif;
+    color: #ffffff; }
+  .reviews__item blockquote {
+    margin: 0;
+    padding: 0;
+    font: 400 16px/140% "Roboto Condensed", "Arial", sans-serif;
+    color: #ffffff; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
