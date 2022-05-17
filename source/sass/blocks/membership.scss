@@ -30,6 +30,22 @@
     @include retina {
       background-image: url("../img/content/membership-bg-weights-desktop@2x.png");
     }
+
+    @include vp-1199 {
+      background-image: url("../img/content/membership-bg-weights-tablet.png");
+      background-size: 289px 345px;
+      bottom: -103px;
+      right: -49px;
+
+      @include retina {
+        background-image: url("../img/content/membership-bg-weights-tablet@2x.png");
+      }
+    }
+  }
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -41,6 +57,11 @@
   text-transform: uppercase;
   color: $color-sapphire;
   text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    margin-bottom: 21px;
+  }
 }
 
 .membership__options {
@@ -50,6 +71,11 @@
   display: flex;
   gap: 46px;
   border-bottom: 2px solid transparentize($color: $color-grey, $amount: 0.8);
+
+  @include vp-1199 {
+    margin-bottom: 45px;
+    gap: 55px;
+  }
 }
 
 .membership__option {
@@ -95,6 +121,12 @@
   &.is-active::after {
     background-color: $color-crimson;
   }
+
+  @include vp-1199 {
+    a {
+      font-size: 18px;
+    }
+  }
 }
 
 .membership__info {
@@ -111,5 +143,13 @@
 
   &:not(:first-child) {
     display: none;
+  }
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    max-width: 442px;
+    margin: 0 auto;
+    gap: 42px;
   }
 }

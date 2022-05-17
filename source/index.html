@@ -43,15 +43,12 @@
               <section class="intro__heading">
                 <p>омск</p>
                 <h1 class="intro__title">фитнес<br> центр</h1>
-                <ul class="intro__features">
-                  <li><p>Тренажёрный зал</p></li>
-                  <li><p>Групповые занятия</p></li>
-                  <li><p>Кардио-зона</p></li>
-                </ul>
                 <a class="intro__btn btn" href="sitemap.html">купить абонемент</a>
               </section>
               <div class="intro__image">
-                <img src="img/content/intro-desktop.jpg" alt="Мужчина в футблоке Супермена">
+                <img src="img/content/intro-desktop.jpg"
+                srcset="img/content/intro-desktop@2x.jpg 2x"
+                width="500" height="556" alt="Мужчина в футблоке Супермена">
               </div>
               <ul class="intro__socials">
                 <li><a class="intro__link" href="sitemap.html">FB</a></li>
@@ -67,15 +64,29 @@
               <h2 class="gym__title">Тренажерный зал</h2>
               <p>Просторный зал площадью 900 кв/м</p>
               <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
+              <p data-adaptive="desktop-only">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
             </section>
             <section class="gym__views">
-              <img src="img/content/gym-bg-desktop.jpg" alt="Фотография зала">
-              <div class="video">
+              <div class="gym__image">
+                  <img
+                  src="img/content/gym-bg-desktop.jpg"
+                  src="img/content/gym-bg-desktop@2x.jpg 2x"
+                  alt="Фотография зала"
+                  width="660"
+                  height="401"
+                >
+              </div>
+              <div class="gym__video video">
                 <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
                   <picture>
                     <source srcset="" type="image/webp">
-                    <img class="video__media" src="img/content/gym-videobg-desktop.jpg" alt="Видеотур по залу">
+                    <img class="video__media"
+                      src="img/content/gym-videobg-desktop.jpg"
+                      src="img/content/gym-videobg-desktop@2x.jpg 2x"
+                      alt="Видеотур по залу"
+                      width="364"
+                      height="228"
+                    >
                   </picture>
                 </a>
                 <button class="video__button" aria-label="Запустить видео">
@@ -280,7 +291,7 @@
               <li class="key-points__item">
                 <div class="key-points__key">100<span>Тренажеров</span></div>
                 <div class="key-points__description">
-                  <p>Современные тренажеры на все группы мышц</p>
+                  <p>Современные тренажеры<br> на все группы мышц</p>
                 </div>
               </li>
               <li class="key-points__item">
@@ -319,7 +330,7 @@
               </li>
               <li class="deals__item">
                 <h3 class="deals__heading">Месяц бесплатно</h3>
-                <p>Приведи друга, получи абонемент в подарок</p>
+                <p>Приведи друга, получи<br> абонемент в подарок</p>
                 <a class="deals__link" href="sitemap.html">Подробнее</a>
               </li>
               <li class="deals__item">
@@ -358,7 +369,7 @@
               <h2 class="contacts__title contacts__title--info">Контакты</h2>
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <h3 class="contacts__heading">Адрес</h3>
+                  <h3 class="contacts__heading">Адрес:</h3>
                   <address>г. Омск, ул. 60 лет Октября, 7</address>
                 </li>
                 <li class="contacts__item">

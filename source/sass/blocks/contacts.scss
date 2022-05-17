@@ -1,3 +1,5 @@
+$free-session-blick-tablet-height: 324px;
+
 .contacts {
   padding-top: 70px;
   padding-bottom: 60px;
@@ -5,14 +7,28 @@
   background:
     linear-gradient(
       to right,
-      $color-sapphire 0%,
-      $color-sapphire 50%,
-      $color-default-white 50%,
-      $color-default-white 100%);
+      $color-sapphire 0% 50%,
+      $color-default-white 50% 100%);
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @include vp-1199 {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: none;
+    background:
+    linear-gradient(
+      to bottom,
+      $color-sapphire 0% $free-session-blick-tablet-height,
+      $color-default-white $free-session-blick-tablet-height 100%);
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -35,14 +51,48 @@
     margin-top: -5px;
     margin-bottom: 33px;
   }
+
+  @include vp-1199 {
+    font-size: 42px;
+
+    &--free-session {
+      margin-top: -3px;
+      margin-bottom: 28px;
+    }
+
+    &--info {
+      margin-bottom: 26px;
+    }
+  }
 }
 
 .contacts__free-session {
   margin-right: 170px;
+
+  @include vp-1199 {
+    min-height: $free-session-blick-tablet-height;
+    padding: 70px 88px;
+    margin-right: 29px;
+  }
+}
+
+.contacts__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @include vp-1199 {
+    column-gap: 60px;
+    row-gap: 30px;
+  }
 }
 
 .contacts__info {
   padding-left: 120px;
+
+  @include vp-1199 {
+    padding: 70px 88px 63px;
+  }
 }
 
 .contacts__list {
@@ -52,6 +102,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 18px;
+
+  @include vp-1199 {
+    margin: 0;
+  }
 }
 
 .contacts__heading {
@@ -67,6 +121,17 @@
     padding: 0;
     font: 400 14px/152.3% $ff-roboto-condensed;
     color: $color-sapphire;
+  }
+
+  @include vp-1199 {
+    font-size: 20px;
+    margin: 0 0 6px;
+
+    & + p,
+    & + a,
+    & + address {
+      font-size: 18px;
+    }
   }
 }
 
@@ -89,4 +154,3 @@
     }
   }
 }
-

@@ -1,5 +1,9 @@
 .trainers {
   padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
 }
 
 .trainers__title {
@@ -8,6 +12,14 @@
   font: 700 49px/120% $ff-bebas-neue;
   letter-spacing: 0.03em;
   color: $color-sapphire;
+
+  @include vp-1199 {
+    font-size: 42px;
+    margin-top: -3px;
+    margin-left: 0;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
 
 .trainers__list {
@@ -25,6 +37,10 @@
 
   &:focus {
     outline: 3px solid $color-torch-red;
+  }
+
+  @include vp-1199 {
+    width: 268px;
   }
 }
 

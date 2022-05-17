@@ -1,6 +1,10 @@
 .reviews {
   padding-bottom: 120px;
   background-color: $color-default-white;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
 }
 
 .reviews__title {
@@ -10,6 +14,11 @@
   letter-spacing: 0.03em;
   color: $color-sapphire;
   text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    margin: -3px 0 34px;
+  }
 }
 
 .reviews__list {
@@ -54,5 +63,10 @@
     padding: 0;
     font: 400 16px/140% $ff-roboto-condensed;
     color: $color-default-white;
+  }
+
+  @include vp-1199 {
+    width: 566px;
+    padding: 62px 65px 56px;
   }
 }

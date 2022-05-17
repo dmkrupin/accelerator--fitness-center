@@ -57,6 +57,16 @@
   .video__button-stroke {
     transition: stroke-opacity $trans-default;
   }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+
+    svg {
+      width: 73px;
+      height: 73px;
+    }
+  }
 }
 
 .video__button-icon-gradient {
