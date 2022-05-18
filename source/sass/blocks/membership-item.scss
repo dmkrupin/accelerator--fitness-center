@@ -38,6 +38,20 @@
       }
     }
   }
+
+  @include vp-767 {
+    padding: 52px 41px 54px;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover {
+        padding: 45px 34px 47px;
+
+        .membership-item__btn {
+          padding: 26px 32px;
+        }
+      }
+    }
+  }
 }
 
 .membership-item__title {
@@ -59,6 +73,14 @@
 
   @include vp-1199 {
     margin-top: -2px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+
+    & + p {
+      margin-bottom: 55px;
+    }
   }
 }
 
@@ -84,6 +106,17 @@
   @include vp-1199 {
     margin-bottom: 34px;
   }
+
+  @include vp-767 {
+    font-size: 48px;
+    margin-left: 8px;
+    margin-bottom: 29px;
+
+    &::after {
+      font-size: 80px;
+      top: 47%;
+    }
+  }
 }
 
 .rouble {
@@ -99,5 +132,10 @@
   @include vp-1199 {
     margin: 0 auto;
     padding: 25px 44px 22px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 24px 30px;
   }
 }

@@ -41,11 +41,20 @@
         background-image: url("../img/content/membership-bg-weights-tablet@2x.png");
       }
     }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   @include vp-1199 {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 68px;
   }
 }
 
@@ -62,6 +71,11 @@
     font-size: 42px;
     margin-bottom: 21px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    margin-bottom: 17px;
+  }
 }
 
 .membership__options {
@@ -75,6 +89,11 @@
   @include vp-1199 {
     margin-bottom: 45px;
     gap: 55px;
+  }
+
+  @include vp-767 {
+    gap: 46px;
+    margin-bottom: 34px;
   }
 }
 
@@ -100,7 +119,10 @@
   }
 
   @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover a,
+    &:hover a {
+      color: transparentize($color: $color-sapphire, $amount: 0.2);
+    }
+
     & a:focus {
       color: transparentize($color: $color-sapphire, $amount: 0.2);
       outline: 3px solid $color-resolution-blue;
@@ -127,6 +149,18 @@
       font-size: 18px;
     }
   }
+
+  @include vp-767 {
+    &::after {
+      right: auto;
+      left: 0;
+      width: 113%;
+    }
+
+    a {
+      font-size: 16px;
+    }
+  }
 }
 
 .membership__info {
@@ -151,5 +185,17 @@
     max-width: 442px;
     margin: 0 auto;
     gap: 42px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+  }
+}
+
+.membership__option-item {
+  @include vp-767 {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
   }
 }

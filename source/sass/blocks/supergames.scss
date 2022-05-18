@@ -17,6 +17,16 @@
       min-height: 292px;
     }
   }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .container {
+      grid-template-columns: auto;
+      grid-template-rows: 292px 292px;
+    }
+  }
 }
 
 .supergames__info {
