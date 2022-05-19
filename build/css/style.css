@@ -965,7 +965,7 @@ button,
         font-size: 28px;
         margin-bottom: 6px; } }
 
-.intro__title {
+h1 {
   margin: 0 0 41px 0;
   padding: 0;
   position: relative;
@@ -974,7 +974,7 @@ button,
   color: #ffffff;
   text-shadow: 2px 0 2px #ffffff;
   text-align: right; }
-  .intro__title::before {
+  h1::before {
     content: "Тренажёрный зал\000A Групповые занятия\000A Кардио-зона";
     position: absolute;
     bottom: 44px;
@@ -986,16 +986,16 @@ button,
     text-align: right;
     text-shadow: none; }
   @media (max-width: 1199px) {
-    .intro__title {
+    h1 {
       font-size: 86px;
       margin-bottom: 31px; }
-      .intro__title::before {
+      h1::before {
         bottom: 27px;
         left: -89px; } }
   @media (max-width: 767px) {
-    .intro__title {
+    h1 {
       font-size: 78px; }
-      .intro__title::before {
+      h1::before {
         bottom: 22px;
         left: -78px; } }
 
@@ -2604,28 +2604,18 @@ p {
 .reviews__item {
   min-height: 242px;
   padding: 62px 62px 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+  grid-template-columns: 80px 1fr;
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
   background-color: #1C3374; }
-  .reviews__item figure {
-    margin: 0;
-    padding: 0;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 80px 1fr;
-    grid-template-columns: 80px 1fr;
-    -webkit-column-gap: 28px;
-       -moz-column-gap: 28px;
-            column-gap: 28px; }
   .reviews__item img {
     grid-row: auto / span 2; }
-  .reviews__item figcaption {
+  .reviews__item p {
     margin: -7px 0 12px;
     font: 700 20px/150% "Roboto Condensed", "Arial", sans-serif;
     color: #ffffff; }
@@ -2639,20 +2629,19 @@ p {
       padding: 62px 64px 56px; } }
   @media (max-width: 767px) {
     .reviews__item {
-      padding: 40px 28px 33px; }
-      .reviews__item figure {
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        -webkit-column-gap: 23px;
-           -moz-column-gap: 23px;
-                column-gap: 23px;
-        row-gap: 15px; }
+      padding: 40px 28px 33px;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      -webkit-column-gap: 23px;
+         -moz-column-gap: 23px;
+              column-gap: 23px;
+      row-gap: 15px; }
       .reviews__item img {
         width: 68px;
         height: 68px;
         grid-row: auto;
         margin-left: 13px; }
-      .reviews__item figcaption {
+      .reviews__item p {
         margin-top: 8px;
         margin-bottom: 0;
         line-height: 130%; }

@@ -40,7 +40,6 @@ const setMembershipTabs = () => {
 export const initTabs = () => {
   // прячем инфу по вариантам членства и выводим только первую - по умолчанию
   hideAllMembershipInfo();
-
   breakpointChecker(document.getElementById('1-month-membership'));
 
   // активируем переключение табов блока membership

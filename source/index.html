@@ -33,17 +33,17 @@
   <body>
     <div class="wrapper">
       <main>
-        <section class="intro">
+        <div class="intro">
           <div class="container">
             <header class="intro__header">
               <a class="intro__logo" href="#">supergym</a>
               <a class="intro__tel" href="tel:88005555555">8-800-555-55-55</a>
             </header>
-            <section class="intro__content">
+            <div class="intro__content">
               <section class="intro__heading">
                 <p>омск</p>
-                <h1 class="intro__title">фитнес<br> центр</h1>
-                <a class="intro__btn btn" href="sitemap.html">купить абонемент</a>
+                <h1>фитнес<br> центр</h1>
+                <a class="intro__btn btn" href="#membership">купить абонемент</a>
               </section>
               <div class="intro__image">
                 <img src="img/content/intro-desktop.jpg"
@@ -55,10 +55,10 @@
                 <li><a class="intro__link" href="sitemap.html">VK</a></li>
                 <li><a class="intro__link" href="sitemap.html">IG</a></li>
               </ul>
-            </section>
+            </div>
           </div>
-        </section>
-        <section class="gym">
+        </div>
+        <div class="gym">
           <div class="container">
             <section class="gym__text">
               <h2 class="gym__title">Тренажерный зал</h2>
@@ -66,15 +66,14 @@
               <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
               <p data-adaptive="desktop-only">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
             </section>
-            <section class="gym__views">
+            <div class="gym__views">
               <div class="gym__image"></div>
               <div class="gym__video video">
                 <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
                   <picture>
-                    <source srcset="" type="image/webp">
                     <img class="video__media"
                       src="img/content/gym-videobg-desktop.jpg"
-                      src="img/content/gym-videobg-desktop@2x.jpg 2x"
+                      srcset="img/content/gym-videobg-desktop@2x.jpg 2x"
                       alt="Видеотур по залу"
                       width="364"
                       height="228"
@@ -88,21 +87,21 @@
                     <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white"/>
                     <defs>
                       <linearGradient class="video__button-stroke-gradient" id="paint0_linear_1_155" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
-                        <stop />
+                        <stop offset="0" />
                         <stop offset="1" />
                       </linearGradient>
                       <linearGradient class="video__button-icon-gradient" id="paint1_linear_1_155" x1="14" y1="49.52" x2="54.1858" y2="9.18415" gradientUnits="userSpaceOnUse">
-                        <stop />
+                        <stop offset="0" />
                         <stop offset="0.885417" />
                       </linearGradient>
                     </defs>
                   </svg>
                 </button>
               </div>
-            </section>
+            </div>
           </div>
-        </section>
-        <section class="membership">
+        </div>
+        <section class="membership" id="membership">
           <div class="container">
             <h2 class="membership__title">Абонементы</h2>
             <ul class="membership__options">
@@ -121,19 +120,19 @@
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">С тренером</h3>
                   <p>12 занятий</p>
-                  <p class="membership-item__price" data-price="5000">5000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="5000">5000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">Дневной</h3>
                   <p>с 8:00 до 17:00</p>
-                  <p class="membership-item__price" data-price="1700">1700 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="1700">1700 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">Полный день</h3>
                   <p>с 8:00 до 22:00</p>
-                  <p class="membership-item__price" data-price="2700">2700 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="2700">2700 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
               </ul>
@@ -141,19 +140,19 @@
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">С тренером</h3>
                   <p>12 занятий</p>
-                  <p class="membership-item__price" data-price="28000">28000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="28000">28000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">Дневной</h3>
                   <p>с 8:00 до 17:00</p>
-                  <p class="membership-item__price" data-price="10000">10000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="10000">10000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">Полный день</h3>
                   <p>с 8:00 до 22:00</p>
-                  <p class="membership-item__price" data-price="15000">15000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="15000">15000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
               </ul>
@@ -161,19 +160,19 @@
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">С тренером</h3>
                   <p>12 занятий</p>
-                  <p class="membership-item__price" data-price="53000">53000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="53000">53000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">Дневной</h3>
                   <p>с 8:00 до 17:00</p>
-                  <p class="membership-item__price" data-price="17000">17000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="17000">17000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
                 <li class="membership__option-item membership-item">
                   <h3 class="membership-item__title">Полный день</h3>
                   <p>с 8:00 до 22:00</p>
-                  <p class="membership-item__price" data-price="27000">27000 <span class="rouble">&#8381</span></p>
+                  <p class="membership-item__price" data-price="27000">27000 <span class="rouble">&#8381;</span></p>
                   <a class="membership-item__btn btn btn--dark" href="sitemap.html">купить абонемент</a>
                 </li>
               </ul>
@@ -409,41 +408,31 @@
             <div class="reviews__list">
               <div class="swiper">
                 <div class="swiper-wrapper">
-                  <article class="reviews__item swiper-slide">
-                    <figure>
-                      <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
-                      <figcaption>Анна Орлова</figcaption>
-                      <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-                    </figure>
-                  </article>
-                  <article class="reviews__item swiper-slide">
-                    <figure>
-                      <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
-                      <figcaption>Вероника Шахова</figcaption>
-                      <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-                    </figure>
-                  </article>
-                  <article class="reviews__item swiper-slide">
-                    <figure>
-                      <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
-                      <figcaption>Михаил Кислов</figcaption>
-                      <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-                    </figure>
-                  </article>
-                  <article class="reviews__item swiper-slide">
-                    <figure>
-                      <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
-                      <figcaption>Евгения Рябикова</figcaption>
-                      <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-                    </figure>
-                  </article>
-                  <article class="reviews__item swiper-slide">
-                    <figure>
-                      <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
-                      <figcaption>Матвей Рябиков</figcaption>
-                      <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-                    </figure>
-                  </article>
+                  <div class="reviews__item swiper-slide">
+                    <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
+                    <p>Анна Орлова</p>
+                    <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  </div>
+                  <div class="reviews__item swiper-slide">
+                    <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
+                    <p>Вероника Шахова</p>
+                    <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  </div>
+                  <div class="reviews__item swiper-slide">
+                    <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
+                    <p>Михаил Кислов</p>
+                    <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  </div>
+                  <div class="reviews__item swiper-slide">
+                    <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
+                    <p>Евгения Рябикова</p>
+                    <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  </div>
+                  <div class="reviews__item swiper-slide">
+                    <img src="img/content/reviews-avatar-1-desktop.png" width="80" height="80" alt="Аватар">
+                    <p>Матвей Рябиков</p>
+                    <blockquote>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+                  </div>
                 </div>
               </div>
             <div class="reviews__swiper-button-prev" tabindex="0"></div>
@@ -451,7 +440,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <div class="contacts">
           <div class="container">
             <section class="contacts__free-session">
               <h2 class="contacts__title contacts__title--free-session">БЕСПЛАТНОЕ занятие</h2>
@@ -483,7 +472,7 @@
               </ul>
             </section>
           </div>
-        </section>
+        </div>
       </main>
       <footer class="page-footer">
         <div class="container">

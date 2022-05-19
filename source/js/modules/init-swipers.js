@@ -40,7 +40,6 @@ const initTrainersSwiper = () => {
   trainersSwiperNextSlideButton.style.display = 'block';
 
   let trainersSwiper = new Swiper('.trainers__list .swiper', {
-    loop: true,
     spaceBetween: 40,
     slidesPerView: 1,
 
