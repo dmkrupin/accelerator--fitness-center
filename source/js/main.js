@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {initVideos} from './modules/init-videos';
-import {initTrainerCards} from './modules/trainers-card';
+import {initTrainerCards} from './modules/init-trainer-cards';
+import {initSwipers} from './modules/init-swipers';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initTrainerCards();
+    initSwipers();
   });
 });
 

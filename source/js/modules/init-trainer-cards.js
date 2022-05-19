@@ -14,8 +14,9 @@ const initTrainerCards = () => {
       cardInfo.style.height = '100%';
       cardPhotoHeading.style.display = 'none';
     };
-    hideInfo();
 
+    cardPhotoHeading.style.display = 'block';
+    hideInfo();
     card.addEventListener('mouseenter', showInfo);
     card.addEventListener('mouseleave', hideInfo);
   }

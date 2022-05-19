@@ -8,6 +8,12 @@
   @include vp-767 {
     padding-bottom: 70px;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .trainers__title {
@@ -35,9 +41,69 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
   display: flex;
-  gap: 40px;
+  // gap: 40px;
+  width: 1160px;
+
+  @include vp-1199 {
+    width: 678px;
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    padding: 0 32px;
+  }
 }
+
+.trainers__swiper-button-prev,
+.trainers__swiper-button-next {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 16px;
+  height: 32px;
+  background-color: $color-transparent;
+  background-image: url(../img/svg/swiper-left.svg);
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  display: none;
+
+  @include vp-767 {
+    background-size: 10px 19px;
+    width: 10px;
+    height: 19px;
+  }
+
+  &:focus {
+    outline: 3px solid $color-resolution-blue;
+    outline-offset: 5px;
+  }
+}
+
+.trainers__swiper-button-prev {
+  left: -57px;
+
+  @include vp-1199 {
+    left: -1px;
+  }
+}
+
+.trainers__swiper-button-next {
+  right: -57px;
+  background-image: url(../img/svg/swiper-right.svg);
+
+  @include vp-1199 {
+    right: -1px;
+  }
+}
+
 
 .trainers__card {
   position: relative;
@@ -81,6 +147,14 @@
     font: 700 18px/120% $ff-roboto-condensed;
     color: $color-default-white;
     text-align: center;
+
+    display: none;
+  }
+
+  @include vp-1199 {
+    h3 {
+      left: 51%;
+    }
   }
 }
 
@@ -116,12 +190,36 @@
     color: $color-spindle;
     text-align: center;
   }
+
+  @include vp-1199 {
+    p:first-of-type {
+      margin: 51px 0 -3px -7px;
+    }
+
+    p + p {
+      margin: 0 0 34px -7px;
+    }
+  }
+
+  @include vp-767 {
+    p:first-of-type {
+      margin: 42px 0 -3px;
+    }
+
+    p + p {
+      margin: 0 0 32px;
+    }
+  }
 }
 
 .trainers__skills {
   margin: 0 25px 0 71px;
   padding: 0;
   list-style-type: disc;
+
+  @include vp-767 {
+    margin: 0 25px 0 50px;
+  }
 }
 
 .trainers__skill {
