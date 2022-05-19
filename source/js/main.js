@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideos} from './modules/init-videos';
 import {initTrainerCards} from './modules/init-trainer-cards';
 import {initSwipers} from './modules/init-swipers';
+import {initTabs} from './modules/init-tabs';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initTrainerCards();
     initSwipers();
+    initTabs();
   });
 });
 
