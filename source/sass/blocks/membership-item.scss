@@ -103,6 +103,12 @@
     content: " " attr(data-price) " ";
   }
 
+  // span {
+  //   font-family: $ff-rouble;
+  //   text-transform: lowercase;
+  //   font-weight: 400;
+  // }
+
   @include vp-1199 {
     margin-bottom: 34px;
   }

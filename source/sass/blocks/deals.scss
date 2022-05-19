@@ -65,11 +65,32 @@
   border-image-slice: 1;
   border-image-source: linear-gradient(160deg, $color-venetian-red, 60%, $color-smalt);
 
+  p {
+    margin: 0;
+    padding: 0;
+    font: 400 16px/140% $ff-roboto-condensed;
+    color: $color-sapphire;
+
+    br {
+      display: none;
+    }
+  }
+
+  @include vp-1199 {
+    p br {
+      display: block;
+    }
+  }
+
   @include vp-767 {
     min-height: 211px;
     align-items: center;
     padding: 29px 28px 40px;
     margin-bottom: 30px;
+
+    p {
+      text-align: center;
+    }
   }
 }
 
@@ -78,27 +99,6 @@
   padding: 0;
   font: 700 26px/150% $ff-roboto-condensed;
   color: $color-sapphire;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  font: 400 16px/140% $ff-roboto-condensed;
-  color: $color-sapphire;
-
-  br {
-    display: none;
-  }
-
-  @include vp-1199 {
-    br {
-      display: block;
-    }
-  }
-
-  @include vp-767 {
-    text-align: center;
-  }
 }
 
 .deals__link {

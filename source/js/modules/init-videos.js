@@ -29,16 +29,15 @@ function parseMediaURL(link) {
 
 function createIframe(id) {
   let iframe = document.createElement('iframe');
-
+  iframe.setAttribute('src', generateURL(id));
   iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;');
   iframe.setAttribute('allowfullscreen', '');
-  iframe.setAttribute('src', generateURL(id));
   iframe.classList.add('video__media');
 
   return iframe;
 }
 
 function generateURL(id) {
-  let query = '?rel=0&modestbranding=1&autohide=1&showinfo=0&autoplay=1';
+  let query = '?rel=0&modestbranding=1&autohide=1&showinfo=0&autoplay=1&enable_js=1';
   return 'https://youtube.com/embed/' + id + query;
 }

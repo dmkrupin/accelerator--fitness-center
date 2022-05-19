@@ -2394,6 +2394,16 @@ h1 {
   border-style: solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(160deg, #b80027, 60%, #00359f); }
+  .deals__item p {
+    margin: 0;
+    padding: 0;
+    font: 400 16px/140% "Roboto Condensed", "Arial", sans-serif;
+    color: #102654; }
+    .deals__item p br {
+      display: none; }
+  @media (max-width: 1199px) {
+    .deals__item p br {
+      display: block; } }
   @media (max-width: 767px) {
     .deals__item {
       min-height: 211px;
@@ -2401,27 +2411,15 @@ h1 {
           -ms-flex-align: center;
               align-items: center;
       padding: 29px 28px 40px;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+      .deals__item p {
+        text-align: center; } }
 
 .deals__heading {
   margin: 0 0 3px;
   padding: 0;
   font: 700 26px/150% "Roboto Condensed", "Arial", sans-serif;
   color: #102654; }
-
-p {
-  margin: 0;
-  padding: 0;
-  font: 400 16px/140% "Roboto Condensed", "Arial", sans-serif;
-  color: #102654; }
-  p br {
-    display: none; }
-  @media (max-width: 1199px) {
-    p br {
-      display: block; } }
-  @media (max-width: 767px) {
-    p {
-      text-align: center; } }
 
 .deals__link {
   position: relative;
@@ -2722,37 +2720,34 @@ p {
 
 .contacts__free-session {
   margin-right: 170px; }
+  .contacts__free-session form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px; }
   @media (max-width: 1199px) {
     .contacts__free-session {
       padding: 70px 162px 68px 133px;
       margin-right: 0;
-      background-color: #102654; } }
+      background-color: #102654; }
+      .contacts__free-session form {
+        -webkit-column-gap: 60px;
+           -moz-column-gap: 60px;
+                column-gap: 60px;
+        row-gap: 30px; } }
   @media (max-width: 767px) {
     .contacts__free-session {
-      padding: 70px 15px 69px; } }
-
-.contacts__form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px; }
-  @media (max-width: 1199px) {
-    .contacts__form {
-      -webkit-column-gap: 60px;
-         -moz-column-gap: 60px;
-              column-gap: 60px;
-      row-gap: 30px; } }
-  @media (max-width: 767px) {
-    .contacts__form {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      gap: 0; } }
+      padding: 70px 15px 69px; }
+      .contacts__free-session form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 0; } }
 
 .contacts__info {
   padding-left: 120px; }
