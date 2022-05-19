@@ -1,4 +1,4 @@
-const Swiper = require('../vendor/swiper');
+require('../vendor/swiper');
 
 const reviewsSwiperPrevSlideButton = document.querySelector('.reviews__swiper-button-prev');
 const reviewsSwiperNextSlideButton = document.querySelector('.reviews__swiper-button-next');

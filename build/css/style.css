@@ -2621,7 +2621,8 @@ p {
      -moz-column-gap: 28px;
           column-gap: 28px;
   background-color: #1c3374; }
-  .reviews__item img {
+  .reviews__item img,
+  .reviews__item picture {
     grid-row: auto / span 2; }
   .reviews__item p {
     margin: -7px 0 12px;
