@@ -58,6 +58,7 @@
   stop {
     transition: stop-color $trans-default;
   }
+
   .video__button-stroke {
     transition: stroke-opacity $trans-default;
   }
@@ -77,14 +78,17 @@
   stop:first-of-type {
     stop-color: $color-dark-cerulean;
   }
+
   stop:not(:first-of-type) {
     stop-color: $color-venetian-red;
   }
 }
+
 .video__button-stroke-gradient {
   stop:first-of-type {
     stop-color: $color-torch-red;
   }
+
   stop:not(:first-of-type) {
     stop-color: $color-cobalt;
   }
@@ -95,14 +99,17 @@
   .video__button-stroke {
     stroke-opacity: 0.6;
   }
+
   .video__button-icon-gradient {
     stop:first-of-type {
       stop-color: $color-cobalt;
     }
+
     stop:not(:first-of-type) {
       stop-color: $color-torch-red;
     }
   }
+
   .video__link::after {
     background-color: transparentize($color: $color-dark-cerulean, $amount: 0.2);
   }

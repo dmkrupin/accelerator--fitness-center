@@ -38,7 +38,9 @@
   background-color: $color-torch-red;
   color: $color-default-white;
 
-  dl, dd, dt {
+  dl,
+  dd,
+  dt {
     margin: 0;
     padding: 0;
   }
@@ -195,6 +197,14 @@
 
     @include retina {
       background-image: url("../img/content/supergames-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url("../img/content/supergames-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/content/supergames-mobile@2x.jpg");
     }
   }
 }

@@ -60,7 +60,6 @@
 .trainers__swiper-button-prev,
 .trainers__swiper-button-next {
   content: "";
-  display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -68,7 +67,7 @@
   width: 16px;
   height: 32px;
   background-color: $color-transparent;
-  background-image: url(../img/svg/swiper-left.svg);
+  background-image: url("../img/svg/swiper-left.svg");
   background-size: 16px 32px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -97,7 +96,7 @@
 
 .trainers__swiper-button-next {
   right: -57px;
-  background-image: url(../img/svg/swiper-right.svg);
+  background-image: url("../img/svg/swiper-right.svg");
 
   @include vp-1199 {
     right: -1px;
