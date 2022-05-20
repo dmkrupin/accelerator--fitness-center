@@ -158,6 +158,8 @@
 }
 
 .trainers__info {
+  @include unselectable;
+
   position: absolute;
   top: 0;
   left: 0;

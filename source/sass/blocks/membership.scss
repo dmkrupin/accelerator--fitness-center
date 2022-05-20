@@ -4,7 +4,6 @@
   padding-bottom: 120px;
   min-height: 851px;
   background-color: $color-ghost-white;
-  overflow: hidden;
 
   .container {
     display: flex;
@@ -98,6 +97,8 @@
 }
 
 .membership__option {
+  @include unselectable;
+
   position: relative;
   padding: 0 0 12px;
 

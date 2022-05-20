@@ -11,8 +11,8 @@ $free-session-block-tablet-height: 324px;
       $color-default-white 50% 100%);
 
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 
   @include vp-1199 {
@@ -22,7 +22,7 @@ $free-session-block-tablet-height: 324px;
     background: $color-default-white;
 
     .container {
-      display: flex;
+      // display: flex;
       flex-direction: column;
       padding: 0;
       margin: 0;
@@ -79,7 +79,7 @@ $free-session-block-tablet-height: 324px;
 }
 
 .contacts__free-session {
-  margin-right: 170px;
+  min-width: 410px;
 
   form {
     display: grid;
@@ -89,7 +89,7 @@ $free-session-block-tablet-height: 324px;
 
   @include vp-1199 {
     padding: 70px 162px 68px 133px;
-    margin-right: 0;
+    min-width: auto;
     background-color: $color-sapphire;
 
     form {
@@ -110,7 +110,6 @@ $free-session-block-tablet-height: 324px;
 }
 
 .contacts__info {
-  padding-left: 120px;
 
   @include vp-1199 {
     padding: 72px 133px 45px;

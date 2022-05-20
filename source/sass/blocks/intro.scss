@@ -120,7 +120,7 @@
   margin-right: 62px;
 
   & > p:first-child {
-    margin: 0 0 2px 0;
+    margin: 0 0 7px 0;
     padding: 0;
 
     font: 400 49px/120% $ff-bebas-neue;
@@ -135,27 +135,28 @@
 
     & > p:first-child {
       font-size: 34px;
-      margin-bottom: -2px;
+      margin-bottom: 4px;
     }
   }
 
   @include vp-767 {
     margin-left: 0;
     width: 100%;
+    justify-content: flex-start;
 
     & > p:first-child {
       font-size: 28px;
-      margin-bottom: 6px;
+      margin-bottom: 9px;
     }
   }
 }
 
 h1 {
-  margin: 0 0 41px 0;
+  margin: 0 0 50px 0;
   padding: 0;
   position: relative;
 
-  font: 700 110px/106% $ff-bebas-neue;
+  font: 700 110px/100% $ff-bebas-neue;
   letter-spacing: 0.03em;
   color: $color-default-white;
   text-shadow: 2px 0 2px $color-default-white;
@@ -164,7 +165,7 @@ h1 {
   &::before {
     content: "Тренажёрный зал\000AГрупповые занятия\000AКардио-зона";
     position: absolute;
-    bottom: 44px;
+    bottom: 35px;
     left: -78px;
 
     white-space: pre;
@@ -177,26 +178,27 @@ h1 {
 
   @include vp-1199 {
     font-size: 86px;
-    margin-bottom: 31px;
+    margin-bottom: 36px;
 
     &::before {
-      bottom: 27px;
+      bottom: 21px;
       left: -89px;
     }
   }
 
   @include vp-767 {
     font-size: 78px;
+    margin-bottom: 37px;
 
     &::before {
-      bottom: 22px;
+      bottom: 16px;
       left: -78px;
     }
   }
 }
 
 .intro__btn {
-  margin-bottom: 50px;
+  margin-bottom: 43px;
   width: 234px;
 
   @include vp-1199 {
@@ -206,6 +208,7 @@ h1 {
 
   @include vp-767 {
     width: 100%;
+    margin-bottom: 0;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -238,7 +241,7 @@ h1 {
 
 .intro__socials {
   align-self: flex-end;
-  margin: 0 0 45px auto;
+  margin: 0 0 38px auto;
   padding: 0;
   list-style: none;
 
@@ -247,6 +250,11 @@ h1 {
 
   li:not(:last-child) {
     margin-bottom: 9px;
+  }
+
+  li:last-child {
+    position: relative;
+    left: 3px;
   }
 
   @include vp-1199 {

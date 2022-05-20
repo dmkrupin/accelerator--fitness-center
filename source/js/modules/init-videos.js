@@ -38,6 +38,6 @@ function createIframe(id) {
 }
 
 function generateURL(id) {
-  let query = '?rel=0&modestbranding=1&autohide=1&showinfo=0&autoplay=1&enable_js=1';
+  let query = '?autoplay=1&enable_js=1';
   return 'https://youtube.com/embed/' + id + query;
 }

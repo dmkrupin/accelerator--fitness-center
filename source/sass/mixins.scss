@@ -4,6 +4,15 @@
   }
 }
 
+@mixin unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
 // Desktop first
 
 // @mixin vp-1919 {
@@ -18,17 +27,23 @@
 //   }
 // }
 
+// @mixin vp-1279 {
+//   @media (max-width: $vp-1280 - 1) {
+//     @content;
+//   }
+// }
+
 @mixin vp-1199 {
   @media (max-width: $vp-1200 - 1) {
     @content;
   }
 }
 
-@mixin vp-1023 {
-  @media (max-width: $vp-1024 - 1) {
-    @content;
-  }
-}
+// @mixin vp-1023 {
+//   @media (max-width: $vp-1024 - 1) {
+//     @content;
+//   }
+// }
 
 @mixin vp-767 {
   @media (max-width: $vp-768 - 1) {

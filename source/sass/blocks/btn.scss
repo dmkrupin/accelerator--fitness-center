@@ -1,4 +1,6 @@
 .btn {
+  @include unselectable;
+
   display: inline-flex;
   justify-content: center;
   padding: 19px 24px;
