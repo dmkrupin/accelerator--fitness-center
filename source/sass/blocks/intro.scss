@@ -73,6 +73,7 @@
   }
 
   @include vp-767 {
+    margin-top: 2px;
     width: 68px;
     height: 15px;
   }
@@ -180,7 +181,7 @@ h1 {
   list-style: none;
 
   position: absolute;
-  bottom: 34.3%;
+  top: 54%;
   left: 0;
 
   font: 400 14px/150% $ff-roboto-condensed;
@@ -190,12 +191,12 @@ h1 {
   text-shadow: none;
 
   @include vp-1199 {
-    bottom: 37%;
+    top: 46.3%;
     left: -90px;
   }
 
   @include vp-767 {
-    bottom: 39%;
+    top: 40%;
     left: 0;
     right: 177px;
   }

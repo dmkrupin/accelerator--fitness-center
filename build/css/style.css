@@ -738,6 +738,9 @@ button,
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 103px; }
+  @media (max-width: 1279px) {
+    .container {
+      padding: 0 55px; } }
   @media (max-width: 1199px) {
     .container {
       padding: 0 45px; } }
@@ -935,6 +938,7 @@ button,
       height: 17px; } }
   @media (max-width: 767px) {
     .intro__logo {
+      margin-top: 2px;
       width: 68px;
       height: 15px; } }
 
@@ -1027,7 +1031,7 @@ h1 {
   padding: 0;
   list-style: none;
   position: absolute;
-  bottom: 34.3%;
+  top: 54%;
   left: 0;
   font: 400 14px/150% "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 0;
@@ -1036,11 +1040,11 @@ h1 {
   text-shadow: none; }
   @media (max-width: 1199px) {
     .intro__features {
-      bottom: 37%;
+      top: 46.3%;
       left: -90px; } }
   @media (max-width: 767px) {
     .intro__features {
-      bottom: 39%;
+      top: 40%;
       left: 0;
       right: 177px; } }
 
@@ -1524,9 +1528,6 @@ h1 {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px; }
-  @media (max-width: 1279px) {
-    .membership__option-items {
-      gap: 5px; } }
   @media (max-width: 1199px) {
     .membership__option-items {
       -ms-grid-columns: 1fr;
@@ -1538,9 +1539,13 @@ h1 {
     .membership__option-items {
       gap: 0; } }
 
-@media (max-width: 767px) {
-  .membership__option-item:not(:last-child) {
-    margin-bottom: 35px; } }
+.membership__option-item {
+  max-width: 360px;
+  -ms-grid-column-align: center;
+      justify-self: center; }
+  @media (max-width: 767px) {
+    .membership__option-item:not(:last-child) {
+      margin-bottom: 35px; } }
 
 .membership-item {
   position: relative;

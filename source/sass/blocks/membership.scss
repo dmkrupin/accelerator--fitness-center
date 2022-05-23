@@ -176,10 +176,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
-  @include vp-1279 {
-    gap: 5px;
-  }
-
   @include vp-1199 {
     grid-template-columns: 1fr;
     max-width: 442px;
@@ -193,6 +189,9 @@
 }
 
 .membership__option-item {
+  max-width: 360px;
+  justify-self: center;
+
   @include vp-767 {
     &:not(:last-child) {
       margin-bottom: 35px;
