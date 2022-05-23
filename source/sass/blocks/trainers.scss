@@ -46,6 +46,10 @@
   // gap: 40px;
   width: 1160px;
 
+  @include vp-1279 {
+    width: 1060px;
+  }
+
   @include vp-1199 {
     width: 678px;
     padding: 0 56px;
@@ -89,6 +93,10 @@
 .trainers__swiper-button-prev {
   left: -57px;
 
+  @include vp-1279 {
+    left: -47px;
+  }
+
   @include vp-1199 {
     left: -1px;
   }
@@ -97,6 +105,10 @@
 .trainers__swiper-button-next {
   right: -57px;
   background-image: url("../img/svg/swiper-right.svg");
+
+  @include vp-1279 {
+    right: -47px;
+  }
 
   @include vp-1199 {
     right: -1px;
@@ -214,12 +226,12 @@
 }
 
 .trainers__skills {
-  margin: 0 25px 0 71px;
+  margin: 0 25px 20px 71px;
   padding: 0;
   list-style-type: disc;
 
   @include vp-767 {
-    margin: 0 25px 0 50px;
+    margin: 0 25px 20px 50px;
   }
 }
 

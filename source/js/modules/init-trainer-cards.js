@@ -19,6 +19,8 @@ const initTrainerCards = () => {
     hideInfo();
     card.addEventListener('mouseenter', showInfo);
     card.addEventListener('mouseleave', hideInfo);
+    card.addEventListener('focus', showInfo);
+    card.addEventListener('blur', hideInfo);
   }
 };
 

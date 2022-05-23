@@ -4,7 +4,6 @@ import {initVideos} from './modules/init-videos';
 import {initTrainerCards} from './modules/init-trainer-cards';
 import {initSwipers} from './modules/init-swipers';
 import {initTabs} from './modules/init-tabs';
-import {initFormValidation} from './modules/form-validation';
 
 // ---------------------------------
 
@@ -26,7 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwipers();
     initTrainerCards();
     initTabs();
-    initFormValidation();
   });
 });
 

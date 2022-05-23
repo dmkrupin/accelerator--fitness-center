@@ -129,21 +129,38 @@ $free-session-block-tablet-height: 324px;
 
   position: relative;
   left: 4px;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // row-gap: 18px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 67%;
+    background-color: $color-light-slate-grey;
+  }
 
   @include vp-1199 {
     margin: 0;
-    position: static;
     left: 0;
     column-gap: 126px;
+
+    &::after {
+      left: 53%;
+      height: 80%;
+    }
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
     gap: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 

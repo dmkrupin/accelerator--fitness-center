@@ -1,11 +1,17 @@
 .key-points {
   padding-top: 120px;
-  padding-bottom: 96px;
+  padding-bottom: 36px;
   background-color: $color-ghost-white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @include vp-1199 {
     padding-top: 100px;
-    padding-bottom: 93px;
+    padding-bottom: 88px;
   }
 
   @include vp-767 {
@@ -46,16 +52,20 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
-  grid-auto-rows: minmax(0, auto);
+  grid-auto-rows: minmax(180px, auto);
+  max-width: 1040px;
+  column-gap: 60px;
+  row-gap: 57px;
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-    grid-template-rows: repeat(auto-fill, minmax(0, auto));
+    grid-auto-rows: minmax(80px, auto);
     row-gap: 44px;
   }
 
   @include vp-767 {
+    align-self: stretch;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -115,7 +125,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
 
   @include vp-767 {
     flex-direction: column;
@@ -157,26 +167,35 @@
   }
 
   &:nth-child(5n + 1) {
-    margin-right: 56px;
+    padding-left: 26px;
+    border-bottom: 2px solid transparentize($color: $color-crimson, $amount: 0.8);
 
     .key-points__description {
       margin-top: 18px;
-      margin-left: 30px;
+      margin-left: 25px;
+
+      position: relative;
+      left: 5px;
     }
 
     @include vp-1199 {
       order: 1;
-      margin-right: 26px;
-      justify-content: flex-end;
+      padding-left: 0;
+      position: relative;
+      left: -4px;
+      border-bottom: none;
 
       .key-points__description {
         margin-top: 11px;
+        margin-left: 30px;
+        position: static;
+        left: 0;
       }
     }
 
     @include vp-767 {
-      justify-content: flex-start;
-      margin-right: 0;
+      padding-left: 15px;
+      left: 0;
 
       .key-points__key {
         margin-top: 1px;
@@ -193,12 +212,11 @@
     grid-row: auto / span 2;
     min-height: 307px;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 85px;
     padding: 41px 34px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     background-color: $color-resolution-blue;
 
     .key-points__key {
@@ -282,8 +300,7 @@
   }
 
   &:nth-child(5n + 3) {
-    margin-left: 61px;
-    justify-content: flex-start;
+    border-bottom: 2px solid transparentize($color: $color-crimson, $amount: 0.8);
 
     .key-points__key {
       margin-right: 30px;
@@ -295,7 +312,7 @@
 
     @include vp-1199 {
       order: 2;
-      margin-left: 0;
+      border-bottom: none;
 
       .key-points__description {
         margin-top: 11px;
@@ -314,20 +331,21 @@
   }
 
   &:nth-child(5n + 4) {
-    margin-right: 56px;
-    margin-bottom: 19px;
-    align-items: flex-end;
+    padding-left: 20px;
 
     .key-points__description {
-      margin-left: 30px;
+      margin-top: 18px;
+      margin-left: 25px;
+
+      position: relative;
+      left: 5px;
     }
 
     @include vp-1199 {
+      padding-left: 0;
       order: 4;
-      justify-content: flex-end;
-      align-items: flex-start;
-      margin-right: 19px;
-      margin-bottom: 0;
+      position: relative;
+      left: -4px;
 
       .key-points__key {
         margin-top: -15px;
@@ -335,12 +353,17 @@
 
       .key-points__description {
         margin-top: -2px;
+        margin-left: 29px;
+        position: static;
+        left: 0;
       }
     }
 
     @include vp-767 {
       justify-content: flex-start;
       align-items: center;
+      padding-left: 15px;
+      left: 0;
       margin-right: 0;
       margin-bottom: 23px;
 
@@ -355,20 +378,13 @@
   }
 
   &:nth-child(5n + 5) {
-    margin-left: 61px;
-    margin-bottom: 19px;
-    align-items: flex-end;
-    justify-content: flex-start;
-
     .key-points__description {
-      margin-left: 32px;
+      margin-left: 33px;
+      margin-top: 16px;
     }
 
     @include vp-1199 {
       order: 5;
-      margin-left: 0;
-      margin-bottom: 0;
-      align-items: flex-start;
 
       .key-points__key {
         margin-top: -15px;
@@ -376,6 +392,7 @@
 
       .key-points__description {
         margin-top: -2px;
+        margin-left: 31px;
       }
     }
 

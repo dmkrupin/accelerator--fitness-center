@@ -52,10 +52,8 @@
 }
 
 .intro__logo {
-  text-transform: uppercase;
-  font: 700 26px/120% $ff-bebas-neue;
-  color: $color-default-white;
-  letter-spacing: 0.02em;
+  width: 89px;
+  height: 20px;
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
@@ -70,11 +68,13 @@
   }
 
   @include vp-1199 {
-    font-size: 24px;
+    width: 82px;
+    height: 17px;
   }
 
   @include vp-767 {
-    font-size: 20px;
+    width: 68px;
+    height: 15px;
   }
 }
 
@@ -111,6 +111,8 @@
 }
 
 .intro__heading {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -154,7 +156,6 @@
 h1 {
   margin: 0 0 50px 0;
   padding: 0;
-  position: relative;
 
   font: 700 110px/100% $ff-bebas-neue;
   letter-spacing: 0.03em;
@@ -162,38 +163,41 @@ h1 {
   text-shadow: 2px 0 2px $color-default-white;
   text-align: right;
 
-  &::before {
-    content: "Тренажёрный зал\000AГрупповые занятия\000AКардио-зона";
-    position: absolute;
-    bottom: 35px;
-    left: -78px;
-
-    white-space: pre;
-    font: 400 14px/150% $ff-roboto-condensed;
-    letter-spacing: 0;
-    color: $color-default-white;
-    text-align: right;
-    text-shadow: none;
-  }
-
   @include vp-1199 {
     font-size: 86px;
     margin-bottom: 36px;
-
-    &::before {
-      bottom: 21px;
-      left: -89px;
-    }
   }
 
   @include vp-767 {
     font-size: 78px;
     margin-bottom: 37px;
+  }
+}
 
-    &::before {
-      bottom: 16px;
-      left: -78px;
-    }
+.intro__features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  position: absolute;
+  bottom: 34.3%;
+  left: 0;
+
+  font: 400 14px/150% $ff-roboto-condensed;
+  letter-spacing: 0;
+  color: $color-default-white;
+  text-align: right;
+  text-shadow: none;
+
+  @include vp-1199 {
+    bottom: 37%;
+    left: -90px;
+  }
+
+  @include vp-767 {
+    bottom: 39%;
+    left: 0;
+    right: 177px;
   }
 }
 

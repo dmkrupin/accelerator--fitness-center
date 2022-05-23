@@ -10,7 +10,6 @@ const initReviewsSwiper = () => {
   reviewsSwiperNextSlideButton.style.display = 'block';
 
   let reviewsSwiper = new Swiper('.reviews__list .swiper', {
-    loop: true,
     spaceBetween: 20,
   });
 
@@ -44,6 +43,7 @@ const initTrainersSwiper = () => {
   let trainersSwiper = new Swiper('.trainers__list .swiper', {
     spaceBetween: 40,
     slidesPerView: 1,
+    rewind: true,
 
     // Responsive breakpoints
     breakpoints: {

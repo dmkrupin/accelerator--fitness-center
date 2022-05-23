@@ -1,15 +1,5 @@
-const breakpoint = window.matchMedia('(max-width:1199px)');
-
 const membershipInfoElementsCollection = document.querySelector('.membership__info').children;
 const membershipTabElementsCollection = document.querySelector('.membership__options').children;
-
-const breakpointChecker = (element) => {
-  if (breakpoint.matches) {
-    element.style.display = 'flex';
-  } else {
-    element.style.display = 'grid';
-  }
-};
 
 const hideAllMembershipInfo = () => {
   for (let element of membershipInfoElementsCollection) {
@@ -32,7 +22,7 @@ const setMembershipTabs = () => {
       const macthingMembershipInfoElement = document.getElementById(evt.target.href.split('#').pop());
       hideAllMembershipInfo();
 
-      breakpointChecker(macthingMembershipInfoElement);
+      macthingMembershipInfoElement.style.display = 'grid';
     });
   }
 };
@@ -40,7 +30,8 @@ const setMembershipTabs = () => {
 export const initTabs = () => {
   // прячем инфу по вариантам членства и выводим только первую - по умолчанию
   hideAllMembershipInfo();
-  breakpointChecker(document.getElementById('1-month-membership'));
+
+  document.getElementById('1-month-membership').style.display = 'grid';
 
   // активируем переключение табов блока membership
   setMembershipTabs();

@@ -36,13 +36,24 @@
         <div class="intro">
           <div class="container">
             <header class="intro__header">
-              <a class="intro__logo" href="#">supergym</a>
+              <a class="intro__logo" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                  <source media="(max-width: 1199px)" srcset="img/svg/logo-tablet.svg">
+                  <img src="img/svg/logo-desktop.svg" width="89" height="20" alt="Логотип">
+                </picture>
+              </a>
               <a class="intro__tel" href="tel:88005555555">8-800-555-55-55</a>
             </header>
             <div class="intro__content">
               <section class="intro__heading">
                 <p>омск</p>
                 <h1>фитнес<br> центр</h1>
+                <ul class="intro__features">
+                  <li>Тренажерный зал</li>
+                  <li>Групповые занятия</li>
+                  <li>Кардио-зона</li>
+                </ul>
                 <a class="intro__btn btn" href="#membership">купить абонемент</a>
               </section>
               <div class="intro__image">
@@ -565,7 +576,7 @@
               <h2 class="contacts__title contacts__title--free-session">БЕСПЛАТНОЕ занятие</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label><input type="text" name="name" placeholder="Имя" required></label>
-                <label><input type="tel" name="tel" placeholder="Телефон" required></label>
+                <label><input class="masked" type="tel" name="tel" id="tel" placeholder="Телефон" data-placeholder="+7 (XXX) XXX-XXXX" pattern="\+7 \(\d{3}\) \d{3}-\d{4}" title="+7 (xxx) xxx-xx-xx" required></label>
                 <button class="btn" type="submit">отправить</button>
               </form>
             </section>

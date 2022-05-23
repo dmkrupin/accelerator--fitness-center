@@ -176,13 +176,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
-  &:not(:first-child) {
-    display: none;
+  @include vp-1279 {
+    gap: 5px;
   }
 
   @include vp-1199 {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     max-width: 442px;
     margin: 0 auto;
     gap: 42px;
