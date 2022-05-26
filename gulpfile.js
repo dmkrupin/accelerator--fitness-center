@@ -33,10 +33,14 @@ const css = () => {
 };
 
 gulp.task('js', async function() {
-  return gulp.src(['source/js/main.js'])
-        .pipe(webpackStream(webpackConfig))
-        .pipe(gulp.dest('build/js'))
+  return gulp.src(['source/js/**/*.js'])
+        .pipe(gulp.dest('build/js/'))
 });
+// gulp.task('js', async function() {
+//   return gulp.src(['source/js/main.js'])
+//         .pipe(webpackStream(webpackConfig))
+//         .pipe(gulp.dest('build/js'))
+// });
 // const js = () => {
 //   return gulp.src(['source/js/main.js'])
 //         .pipe(webpackStream(webpackConfig))
