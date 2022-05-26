@@ -1,6 +1,6 @@
 // Swiper 7.4.1
-import './vendor/swiper';
-import {masking} from './vendor/masking-inputs';
+import './vendor/swiper.js';
+import {masking} from './vendor/masking-inputs.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 

@@ -1,4 +1,4 @@
-import {Modals} from './modals';
+import {Modals} from './modals.js';
 
 let modals;
 
