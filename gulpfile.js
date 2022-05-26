@@ -32,11 +32,10 @@ const css = () => {
       .pipe(server.stream());
 };
 
-const js = (done) => {
-  gulp.src(['source/js/main.js'])
-    .pipe(webpackStream(webpackConfig))
-    .pipe(gulp.dest('build/js'))
-  done();
+const js = () => {
+  return gulp.src(['source/js/main.js'])
+        .pipe(webpackStream(webpackConfig))
+        .pipe(gulp.dest('build/js'))
 };
 
 const svgo = () => {
@@ -115,7 +114,13 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, js, sprite);
+const build = gulp.series(
+  clean,
+  gulp.series(svgo),
+  gulp.parallel(
+    copy, css, js, sprite
+  ),
+);
 
 const start = gulp.series(build, syncServer);
 
