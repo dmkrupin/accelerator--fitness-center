@@ -1,9 +1,9 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {initVideos} from './modules/init-videos';
-import {initTrainerCards} from './modules/init-trainer-cards';
-import {initSwipers} from './modules/init-swipers';
-import {initTabs} from './modules/init-tabs';
+import {iosVhFix} from './utils/ios-vh-fix.js';
+import {initModals} from './modules/modals/init-modals.js';
+import {initVideos} from './modules/init-videos.js';
+import {initTrainerCards} from './modules/init-trainer-cards.js';
+import {initSwipers} from './modules/init-swipers.js';
+import {initTabs} from './modules/init-tabs.js';
 
 // ---------------------------------
 
